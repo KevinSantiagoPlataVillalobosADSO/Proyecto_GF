@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Oswald:wght@200..700&display=swap');
+@import url(/slider.css);
 
 html{
     font-family: "Oswald", sans-serif;
@@ -43,7 +44,8 @@ body{
 .img_icon{
     width: 130px;
     height: 130px;
-    margin-bottom: 40%;
+    margin-top: 50px;
+    margin-bottom: 30%;
 }
 
 .content_nav{
@@ -66,30 +68,62 @@ a{
 }
 
 a > div{
-    padding-top: var(--padding);
+    padding-bottom: var(--padding);
     height: 40px;
     background-color: var(--whiter);
-    border-radius: 10px;
+    border-radius: 20px;
     color: black;
+    font-size: 32px;
 }
 
 .button__aside:hover{
     cursor: pointer;
-    color: var(--whiter);
 }
 
 .button__aside--inicio > div:hover{
     background-color: var(--home_blue);
+    color: var(--whiter);
+    font-weight: bolder;
 }
 .button__aside--admin > div:hover{
     background-color: var(--golden_admin);
+    color: var(--whiter);
+    font-weight: bolder;
 }
 .button__aside--venta > div:hover{
     background-color: var(--gren_sales);
+    color: var(--whiter);
+    font-weight: bolder;
 }
 
-.content_main{
+main{
     background-color: var(--gray-low);
     grid-area: m;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.contenedor_tabla{
+    width: 98%;
+    height: 98%;
+    background-color: var(--gray-peace);
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+table{
+    width: 100%;
+    height: 10%;
+    border: 1px solid black;
+}
+
+td{
+    border-right: 1px solid black;  
+    padding: var(--padding); 
+}
+
+.night{
+    background-color: var(--gray-night);
+}

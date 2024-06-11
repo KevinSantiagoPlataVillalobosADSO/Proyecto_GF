@@ -48,3 +48,13 @@ main{
     width: 100px;
     height: 100px;
 }
+
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure > p{
+    font-size: 32px;
+}
