@@ -6,11 +6,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: 0.5s;
 }
 
 :root{
     --whiter: white;
     --gray-peace: rgb(236, 236, 236); 
+    --sotf-night: rgb(44, 44, 62);
     --gray-night: rgb(26, 26, 46);
     --gray-low: rgb(195, 195, 195);
     --gren_sales: #06B802;
@@ -130,4 +132,12 @@ td{
 
 .night{
     background-color: var(--gray-night);
+}
+
+.night_soft{
+    background-color: var(--soft-night);
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
