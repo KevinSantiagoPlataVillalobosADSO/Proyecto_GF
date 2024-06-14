@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Oswald:wght@200..700&display=swap');
-@import url(/slider.css);
+@import url(../slider.css);
 
 html{
     font-family: "Oswald", sans-serif;
