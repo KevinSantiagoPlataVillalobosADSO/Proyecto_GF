@@ -24,7 +24,7 @@
 }
 
 body{
-    height: 98.3vh;
+    height: 100vh;
     background-color: var(--gray-peace);
     display: grid;
     grid-template-rows: repeat(4, 1fr);
@@ -103,23 +103,109 @@ a:hover{
 }
 
 main{
-    background-color: var(--gray-low);
+    background-color: var(--whiter);
     grid-area: m;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.contenedor_tabla{
+.container{
     width: 98%;
     height: 98%;
-    background-color: var(--gray-peace);
+    background-color: var(--whiter);
     display: flex;
     justify-content: center;
-    overflow-y: auto;
+    align-items: center;
+    gap: 30px;
 }
 
-table{
+.cards__cat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--padding);
+    background-color: var(--gray-peace);
+    width: 20%;
+    height: 95vh;
+}
+
+.card__cat{
+    width: 95%;
+    margin: var(--margin);
+    height: 20%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--golden_admin);
+}
+
+.card__cat > p{
+    font-size: 40px;
+    color: var(--whiter);
+}
+
+.cards{
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(auto-fill, 350px);
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 75%;
+    height: 95vh;
+    background-color: var(--gray-peace);
+}
+
+.card{
+    width: 350px;
+    height: 350px;
+    background-color: var(--home_blue);
+    border-radius: 20px;
+    display: flex;
+    align-items: end;
+}
+
+.card__info{
+    padding: var(--padding);
+    display: flex;
+    color: var(--whiter);
+    width: 100%;
+    height: 35%;
+    background-color: rgba(0, 0, 0, 0.617);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.info_paragraph{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+    border-right: 1px solid var(--whiter);
+}
+
+.info_paragraph > p{
+    margin: 6px;
+}
+
+.card__plus{
+    font-size: 10px;
+    width: 30%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.card__plus > p{
+    overflow-y: auto;
+    max-height: 100%;
+    width: calc(100% + 17px)
+}
+
+/* table{
     width: 100%;
     height: 10%;
     border: 1px solid black;
@@ -128,16 +214,5 @@ table{
 td{
     border-right: 1px solid black;  
     padding: var(--padding); 
-}
+} */
 
-.night{
-    background-color: var(--gray-night);
-}
-
-.night_soft{
-    background-color: var(--soft-night);
-    grid-area: a;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
