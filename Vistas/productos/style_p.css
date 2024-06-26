@@ -145,11 +145,12 @@ main{
     color: var(--whiter);
 }
 
+
 .cards{
     overflow-y: auto;
     display: grid;
-    grid-template-columns: repeat(3, 350px);
-    grid-template-rows: repeat(auto-fill, 350px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
     justify-content: center;
     gap: 20px;
     padding: 20px;
@@ -159,72 +160,38 @@ main{
 }
 
 .card{
-    width: 350px;
-    height: 350px;
+    width: 38vh;
+    height: 38vh;
     background-color: var(--gray-low);
     border-radius: 20px;
-    display: flex;
+    display: grid;
     align-items: end;
+    position: relative;
+}
+
+
+img{  
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
 }
 
 .--manzana{
-    background-image: url(../../IMG/productos/manzanas.webp);
-    background-size: cover;
+   
 }
 
-.--pera{
-    background-image: url(../../IMG/productos/pera.jpg);
-    background-size: cover;
-}
 
-.--piña{
-    background-image: url(../../IMG/productos/piña.jpg);
-    background-size: cover;
-}
-
-.--sandia{
-    background-image: url(../../IMG/productos/sandia.jpg);
-    background-size: 200%;
-    background-position-x: 50%;
-}
-
-.--papaya{
-    background-image: url(../../IMG/productos/papaya.jpg);
-    background-size: 150%;
-}
-
-.--uvas{
-    background-image: url(../../IMG/productos/uvas.png);
-    background-size: cover;
-}
-
-.--mangou{
-    background-image: url(../../IMG/productos/mango.jpeg);
-    background-size: cover;
-}
-
-.--cereza{
-    background-image: url(../../IMG/productos/cereza.jpg);
-    background-size: cover;
-}
-
-.--naranja{
-    background-image: url(../../IMG/productos/naranja.jpg);
-    background-size: cover;
-}
-
-.card__img{
+/* .card__img{
     position: relative;
     z-index: 1;
     width: 350px;
     height: 350px;
     object-fit: cover;
     border-radius: 20px;
-}
+} */
 
 .card__info{
-    position: relative;
-    z-index: 2;
+    position: absolute;
     padding: var(--padding);
     display: flex;
     color: var(--whiter);
@@ -235,6 +202,7 @@ main{
 }
 
 .info_paragraph{
+    font-size: 2vh;
     width: 80%;
     height: 100%;
     display: flex;
@@ -249,7 +217,7 @@ main{
 }
 
 .card__plus{
-    font-size: 15px;
+    font-size: 2vh;
     width: 30%;
     overflow-y: hidden;
     overflow-x: hidden;
