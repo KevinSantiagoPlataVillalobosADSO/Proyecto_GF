@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Oswald:wght@200..700&display=swap');
+
+*{
+    font-family: "Oswald", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+:root{
+    --whiter: white;
+    --gray-peace: rgb(236, 236, 236); 
+    --sotf-night: rgb(44, 44, 62);
+    --gray-night: rgb(26, 26, 46);
+    --gray-low: rgb(195, 195, 195);
+    --gren_sales: #06B802;
+    --golden_admin: #FEB70A;
+    --apple: #FF4D30;
+    --home_blue: rgb(35, 116, 255);
+    --padding: 10px;
+    --margin: 16px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--whiter);
+}
+
+.login-container{
+    border: 1vh solid var(--golden_admin) ;
+    border-radius: 40px;
+    width: 60vh;
+    height: 55vh;
+    background-color: var(--whiter);
+    text-align: center;
+    padding: var(--padding);
+}
+
+.login-container > h2{
+    font-size: 5vh;
+    margin-bottom: 20px;
+}
+
+.login-container > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form > input{
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: var(--padding);
+    border: 0.5vh solid var(--golden_admin);
+    width: 90%;
+    height: 7vh;
+    font-size: 3vh;
+    margin-bottom: 20px;
+}
+
+form > input:hover{
+    scale: 1.05;
+}
+
+.btn_submit{
+    border: none;
+    background-color: var(--whiter);
+    border: 0.5vh solid var(--golden_admin);
+    border-radius: 20px;
+    width: 80%;
+    height: 9vh;
+    font-size: 4vh;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.btn_submit:hover{
+    color: var(--whiter);
+    background-color: var(--golden_admin);
+}
