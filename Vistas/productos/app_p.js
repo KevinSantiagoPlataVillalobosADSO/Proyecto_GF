@@ -1,4 +1,4 @@
-import {data} from "./datos.js";
+import {data} from "././datos.js";
 
 let dom = document;
 let $padre = dom.querySelector(".container");
