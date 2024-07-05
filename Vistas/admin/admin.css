@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Oswald:wght@200..700&display=swap');
+@import url(../../bar_style.css);
+
+*{
+    font-family: "Oswald", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+:root{
+    --whiter: white;
+    --gray-peace: rgb(236, 236, 236); 
+    --sotf-night: rgb(44, 44, 62);
+    --gray-night: rgb(26, 26, 46);
+    --gray-low: rgb(195, 195, 195);
+    --gren_sales: #06B802;
+    --golden_admin: #FEB70A;
+    --apple: #FF4D30;
+    --home_blue: rgb(35, 116, 255);
+    --padding: 10px;
+    --margin: 16px;
+}
+
+

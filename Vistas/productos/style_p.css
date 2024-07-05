@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Oswald:wght@200..700&display=swap');
+@import url(../../bar_style.css);
 
 *{
     font-family: "Oswald", sans-serif;
@@ -20,92 +21,6 @@
     --home_blue: rgb(35, 116, 255);
     --padding: 10px;
     --margin: 16px;
-}
-
-body{
-    height: 100vh;
-    background-color: var(--gray-peace);
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: 0.7fr repeat(3, 1fr);
-    grid-template-areas: 
-    "a m m m"
-    "a m m m"
-    "a m m m"
-    "a m m m";
-}
-
-.content_aside{
-    background-color: var(--gray-peace);
-    grid-area: a;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.img_icon{
-    width: 18vh;
-    height: 18vh;
-    margin-top: 50px;
-    margin-bottom: 30%;
-}
-
-.content_nav{
-    width: 35vh;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-figure{
-    height: 7vh;
-    width: 90%;
-    margin-bottom: 10px;
-}
-
-a{
-    text-decoration: none;
-}
-
-a > div{
-    color: black;
-    height: 100%;
-    width: 100%;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-    font-size: 5vh;
-}
-
-a:hover{
-    cursor: pointer;
-}
-
-.button__aside--inicio > div:hover{
-    background-color: var(--home_blue);
-    color: var(--whiter);
-    font-weight: bolder;
-}
-.button__aside--admin > div:hover{
-    background-color: var(--golden_admin);
-    color: var(--whiter);
-    font-weight: bolder;
-}
-.button__aside--venta > div:hover{
-    background-color: var(--gren_sales);
-    color: var(--whiter);
-    font-weight: bolder;
-}
-
-main{
-    background-color: var(--whiter);
-    grid-area: m;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .container{
@@ -136,14 +51,14 @@ main{
     width: 34vh;
     height: 100%;
     margin: var(--margin);
-    border-radius: 20px;
+    border-radius: 3vh;
     background-color: var(--gren_sales);
 }
 
 .card__cat > img{
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 3vh;
     object-fit: cover;
     position: absolute;
 }
@@ -162,10 +77,10 @@ main{
 }
 
 .card{
-    width: 35vh;
-    height: 35vh;
+    width: 33vh;
+    height: 33vh;
     background-color: var(--gray-low);
-    border-radius: 20px;
+    border-radius: 4vh;
     display: grid;
     align-items: end;
     position: relative;
@@ -175,7 +90,7 @@ main{
 .card > img{  
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 4vh;
     object-fit: cover;
 }
 
@@ -188,11 +103,14 @@ main{
     width: 100%;
     height: 35%;
     background-color: rgba(0, 0, 0, 0.617);
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0px 0px 4vh 4vh;
 }
 
 .info_paragraph{
-    font-size: 1.8vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 2vh;
+    font-size: 2vh;
     width: 80%;
     height: 100%;
     display: flex;
@@ -203,12 +121,13 @@ main{
 }
 
 .info_paragraph > p{
-    margin: 6px;
+    margin: 0.2vh;
 }
 
 .card__plus{
     font-size: 2vh;
-    width: 30%;
+    width: 40%;
+    height: 100%;
     overflow-y: hidden;
     overflow-x: hidden;
 }
