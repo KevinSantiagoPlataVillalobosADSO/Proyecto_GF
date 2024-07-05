@@ -1,10 +1,12 @@
-## Installation
+## Instalacion del "server"
 
 ***
-A little intro about the installation. 
+paso a paso
 ```
-$ git clone https://example.com
-$ cd ../path/to/the/file
-$ npm install
-$ npm start
+$ npm install json-server
+```
+```
+dentro de la carpeta del proyecto:
+$ cd database
+$ npx json-server data.json
 ```
