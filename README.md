@@ -1,7 +1,7 @@
 ## Instalacion del "server"
 
 ***
-paso a paso
+Para poder visualizar la Pagina(git page) realizar los pasos:
 ```
 $ npm install json-server
 ```

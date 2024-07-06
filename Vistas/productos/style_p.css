@@ -67,8 +67,8 @@
     overflow-y: auto;
     overflow-x: hidden;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(3, 33vh);
+    grid-template-rows: repeat(auto-fill, 33vh);
     justify-content: center;
     gap: 20px;
     padding: 20px;

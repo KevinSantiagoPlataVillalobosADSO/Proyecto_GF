@@ -23,4 +23,38 @@
     --margin: 16px;
 }
 
+main{
 
+    justify-content: start;
+    align-items: center;
+    padding: 3vh;
+}
+
+
+.admin__content{
+    margin: 5vh;
+    width: 110vh;
+    height: 26.5vh;
+}
+
+.content__options{
+    background-color: var(--golden_admin);
+    width: 100%;
+    height: 90%;
+    padding: 2vh;
+    display: flex;
+    align-items: center;
+}
+
+.content__title{
+    background-color: var(--golden_admin);
+    width: 30vh;
+    height: 15%;
+}
+
+.option{
+    background-color: var(--whiter);
+    margin: 1wvh;
+    width: 20vh;
+    height: 20vh;
+}
