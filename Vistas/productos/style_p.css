@@ -48,11 +48,16 @@
 
 .card__cat{
     position: relative;
-    width: 34vh;
-    height: 100%;
+    width: 30vh;
+    height: 90%;
     margin: var(--margin);
     border-radius: 3vh;
     background-color: var(--gren_sales);
+}
+
+.card__cat:hover{
+    scale: 1.05;
+    cursor: pointer;
 }
 
 .card__cat > img{

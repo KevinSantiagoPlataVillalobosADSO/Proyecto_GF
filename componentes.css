@@ -1,0 +1,107 @@
+/* Botones -------------------------------- */
+
+/* ADMIN  */
+.option{
+    background-color: var(--whiter);
+    margin: 1vh;
+    display: flex;
+    flex-direction: column;
+    width: 20vh;
+    height: 20vh;
+}
+
+.option:visited{
+    color: #000;
+}
+
+.option > i{
+    font-size: 13vh;
+    padding-top: 2vh;
+    text-align: center;
+    width: 100%;
+    height: 16vh;
+}
+
+.option > p{
+    text-align: center;
+    font-size: 3vh;
+    padding-bottom: 1vh;
+}
+
+.option:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+
+/* global */
+
+.btn_cmp{
+    width: 10vh;
+    height: 5vh;
+    font-size: 2vh;
+    border: none;
+    background-color: var(--gren_sales);
+    color: var(--whiter);
+    border-radius: 2vh;
+}
+
+
+.btn_cmp:hover{
+    scale: 1.05;
+    cursor: pointer;
+    background-color: var(--whiter);
+    color: var(--gren_sales);
+    border: 0.5vh solid var(--gren_sales);
+}
+
+/* cards */
+
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalDialog > div {
+    border-radius: 2ch;
+	width: 50vh;
+    height: 60vh;
+	position: relative;
+	margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	padding: 3vh;
+	background: #fff;
+  -webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+}
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: 0px;
+    top: 0px;
+	text-align: center;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+    border-radius: 0 1vh 0 0;
+
+}
+.close:hover { background: #ff1e00; }

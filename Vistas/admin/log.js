@@ -2,6 +2,7 @@ let dom = document;
 let user = dom.querySelector(".user")
 let pass = dom.querySelector(".pass")
 let form = dom.querySelector("form")
+let icon = dom.querySelector("i")
 
 const enter = (event)=>{
     let found = false;
@@ -12,9 +13,12 @@ const enter = (event)=>{
     console.log(admin)
     admin.map((x)=>{
         if(user.value === x.user && pass.value === x.passw){
+            icon.classList.remove("bx-lock-alt")
+            icon.classList.add("bx-lock-open-alt")
             found = true;
-            console.log("encontrado")
-            location.href = "admin.html"
+            setTimeout(() => {
+                location.href = "admin.html"
+            }, 1000);
         }
         })
     if(!found){
