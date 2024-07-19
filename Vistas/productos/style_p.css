@@ -28,31 +28,42 @@
     width: 100%;
     height: 100%;
     background-color: var(--whiter);
-    display: flex;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "s p p p"
+    "s p p p"
+    "s p p p"
+    "s p p p";
+    
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 30px;
+    align-items: center; */
 }
 
 .cards__cat{
+    grid-area: s;
     overflow-y: scroll;
     overflow-x: hidden;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fill, 1fr);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 25%;
-    height: 90vh;
-    gap: 10px;
+    align-items: center;
+    width: 100%;
+    height: 110%;
+    gap: 1vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border-right: 1vh dashed var(--gren_sales);
 }
 
 .card__cat{
     position: relative;
-    width: 30vh;
+    width: 95%;
     height: 90%;
     margin: var(--margin);
     border-radius: 3vh;
-    background-color: var(--gren_sales);
 }
 
 .card__cat:hover{
@@ -69,21 +80,21 @@
 }
 
 .cards{
+    grid-area: p;
     overflow-y: auto;
     overflow-x: hidden;
     display: grid;
     grid-template-columns: repeat(3, 33vh);
     grid-template-rows: repeat(auto-fill, 33vh);
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    width: 70%;
-    height: 95vh;
+    gap: 2vh;
+    width: 100%;
+    height: 100%;
 }
 
 .card{
-    width: 33vh;
-    height: 33vh;
+    width: 100%;
+    height: 100%;
     background-color: var(--gray-low);
     border-radius: 4vh;
     display: grid;
@@ -144,14 +155,90 @@
     width: calc(100% + 17px)
 }
 
-/* table{
-    width: 100%;
-    height: 10%;
-    border: 1px solid black;
+@media (max-width:768px) {
+
+    body{
+        height: 100vh;
+        background-color: var(--gray-peace);
+        display: grid;
+        grid-template-rows: 0.2fr repeat(3, 1fr);
+        grid-template-columns: 0.7fr repeat(3, 1fr);
+        grid-template-areas: 
+        "h h h h"
+        "m m m m"
+        "m m m m"
+        "m m m m";
+    }
+
+    .content_aside{
+
+        display: none;
+    }
+
+    .card{
+        width: 100%;
+        height: 100%;
+        background-color: var(--gray-low);
+        border-radius: 4vh;
+        display: grid;
+        align-items: end;
+        position: relative;
+    }
+
+    .cards{
+        grid-template-columns: repeat(3, 20vh);
+        grid-template-rows: repeat(auto-fill, 20vh);
+        justify-content: center;
+        gap: 0.5vh;
+        padding: 2vh;
+        width: 100%;
+        height: 95vh;
+    }
+
+    .container{
+        overflow: hidden;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        "s s s s"
+        "p p p p"
+        "p p p p"
+        "p p p p";
+    }
+    
+    .cards__cat{
+        padding: 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        display: grid;
+        grid-template-columns: repeat(5, 1.5fr);
+        grid-template-rows: 15vh;
+        height: 20vh;
+        width: 100%;
+        justify-content: start;
+        align-items: center;
+        margin: 0;
+        border-bottom: 1vh dashed var(--gren_sales);
+        border-right: none;
+        /* overflow: scroll;
+        flex-direction: row;
+        width: 100%;
+        height: 30%;
+        padding: 0px; */
+    }
+
+    .card__cat{
+        width: 30vh;
+        height: 95%;
+        margin: var(--margin);
+        border-radius: 3vh;
+    }
+
+    .header{
+        grid-area: h;
+        height: 100%;
+        background-color: #06B802;
+    }
 }
 
-td{
-    border-right: 1px solid black;  
-    padding: var(--padding); 
-} */
 
