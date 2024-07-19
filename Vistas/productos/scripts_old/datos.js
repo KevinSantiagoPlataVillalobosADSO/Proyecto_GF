@@ -54,12 +54,5 @@ export let data = [
         "precio": "5000/lb",
         "stock": "20Lbs",
         "info_add": "Fecha de vencimineto: 23/07/2025"
-    },
-    {
-        "nombre": "naranja",
-        "src": "../../IMG/productos/naranja.jpg",
-        "precio": "5000/lb",
-        "stock": "20Lbs",
-        "info_add": "Fecha de vencimineto: 23/07/2025"
     }
 ]

@@ -3,6 +3,7 @@ let user = dom.querySelector(".user")
 let pass = dom.querySelector(".pass")
 let form = dom.querySelector("form")
 let icon = dom.querySelector("i")
+let btn = dom.querySelector('.btn_cmp');      
 
 const enter = (event)=>{
     let found = false;
@@ -17,7 +18,7 @@ const enter = (event)=>{
             icon.classList.add("bx-lock-open-alt")
             found = true;
             setTimeout(() => {
-                location.href = "admin.html"
+                window.location.href = "../admin.html"
             }, 1000);
         }
         })
@@ -28,6 +29,23 @@ const enter = (event)=>{
 
     })();
 }
+
+let text = (e, el)=>{
+    if(e.type == "mouseover"){
+        el.innerHTML = "<<<"
+    }
+    else{
+        el.innerHTML = "Volver"
+    }
+}     
+    
+btn.addEventListener('mouseover', (event) => {
+    text(event, btn)
+})
+
+btn.addEventListener('mouseout', (event) => {
+    text(event, btn)
+})
 
 form.addEventListener('submit', enter)
 

@@ -1,5 +1,3 @@
-import {data} from "../productos/datos.js";
-
 (async()=>{
     let response = await fetch("http://localhost:3000/productos")
     let datos = await response.json();
@@ -52,5 +50,3 @@ import {data} from "../productos/datos.js";
 
     $cards.appendChild(fragment)
 })();
-
-

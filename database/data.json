@@ -79,6 +79,11 @@
             "admin_r": "0",
             "user": "a",
             "passw": "a"
+        },
+        {
+            "admin_r": "1",
+            "user": "carlos",
+            "passw": "123"
         }
     ]
 }
