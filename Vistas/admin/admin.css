@@ -91,3 +91,7 @@ form > input{
 form > input:focus{
     border-bottom: 0.5vh solid var(--gren_sales);
 }
+
+.no_send{
+    border: 0.2vh solid red;
+}

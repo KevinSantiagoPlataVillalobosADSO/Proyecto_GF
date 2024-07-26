@@ -1,89 +1,109 @@
 {
-    "productos": [
-        {   
-        "nombre": "Manzana",
-        "src": "../../IMG/productos/manzanas.webp",
-        "precio": "1500/lb",
-        "stock": "100Lbs",
-        "info_add": "Fecha de vencimineto: 12/04/2025"
+  "productos": [
+    {
+      "nombre": "Manzana",
+      "src": "../../IMG/productos/manzanas.webp",
+      "precio": "1500/lb",
+      "stock": "100Lbs",
+      "info_add": "Fecha de vencimineto: 12/04/2025",
+      "id": "112f"
     },
     {
-        "nombre": "Pera",
-        "src": "../../IMG/productos/pera.jpg",
-        "precio": "2000/lb",
-        "stock": "60Lbs",
-        "info_add": "Fecha de vencimineto: 10/06/2025"
+      "nombre": "Pera",
+      "src": "../../IMG/productos/pera.jpg",
+      "precio": "2000/lb",
+      "stock": "60Lbs",
+      "info_add": "Fecha de vencimineto: 10/06/2025",
+      "id": "1a2c"
     },
     {
-        "nombre": "Lulo",
-        "src": "../../IMG/productos/lulo.jpg",
-        "precio": "5000/lb",
-        "stock": "20Lbs",
-        "info_add": "Fecha de vencimineto: 23/07/2025"
+      "nombre": "Lulo",
+      "src": "../../IMG/productos/lulo.jpg",
+      "precio": "5000/lb",
+      "stock": "20Lbs",
+      "info_add": "Fecha de vencimineto: 23/07/2025",
+      "id": "6209"
     },
     {
-        "nombre": "cereza",
-        "src": "../../IMG/productos/cereza.jpg",
-        "precio": "5000/lb",
-        "stock": "20Lbs",
-        "info_add": "Fecha de vencimineto: 23/07/2025"
+      "nombre": "cereza",
+      "src": "../../IMG/productos/cereza.jpg",
+      "precio": "5000/lb",
+      "stock": "20Lbs",
+      "info_add": "Fecha de vencimineto: 23/07/2025",
+      "id": "186c"
     },
     {
-        "nombre": "Sandia",
-        "src": "../../IMG/productos/sandia.jpg",
-        "precio": "5000/lb",
-        "stock": "20Lbs",
-        "info_add": "Fecha de vencimineto: 23/07/2025"
+      "nombre": "Sandia",
+      "src": "../../IMG/productos/sandia.jpg",
+      "precio": "5000/lb",
+      "stock": "20Lbs",
+      "info_add": "Fecha de vencimineto: 23/07/2025",
+      "id": "ad32"
     },
     {
-        "nombre": "uvas",
-        "src": "../../IMG/productos/uvas.png",
-        "precio": "5000/lb",
-        "stock": "20Lbs",
-        "info_add": "Fecha de vencimineto: 23/07/2025"
+      "nombre": "uvas",
+      "src": "../../IMG/productos/uvas.png",
+      "precio": "5000/lb",
+      "stock": "20Lbs",
+      "info_add": "Fecha de vencimineto: 23/07/2025",
+      "id": "f486"
     },
     {
-        "nombre": "piña",
-        "src": "../../IMG/productos/piña.jpg",
-        "precio": "5000/lb",
-        "stock": "20Lbs",
-        "info_add": "Fecha de vencimineto: 23/07/2025"
+      "nombre": "piña",
+      "src": "../../IMG/productos/piña.jpg",
+      "precio": "5000/lb",
+      "stock": "20Lbs",
+      "info_add": "Fecha de vencimineto: 23/07/2025",
+      "id": "039c"
     },
     {
-        "nombre": "papaya",
-        "src": "../../IMG/productos/papaya.jpg",
-        "precio": "5000/lb",
-        "stock": "20Lbs",
-        "info_add": "Fecha de vencimineto: 23/07/2025"
+      "nombre": "papaya",
+      "src": "../../IMG/productos/papaya.jpg",
+      "precio": "5000/lb",
+      "stock": "20Lbs",
+      "info_add": "Fecha de vencimineto: 23/07/2025",
+      "id": "7a59"
     },
     {
-        "nombre": "naranja",
-        "src": "../../IMG/productos/naranja.jpg",
-        "precio": "5000/lb",
-        "stock": "20Lbs",
-        "info_add": "Fecha de vencimineto: 23/07/2025"
+      "nombre": "naranja",
+      "src": "../../IMG/productos/naranja.jpg",
+      "precio": "5000/lb",
+      "stock": "20Lbs",
+      "info_add": "Fecha de vencimineto: 23/07/2025",
+      "id": "a0c8"
+    },
+    {
+      "id": "21",
+      "nombre": "12",
+      "stock": "21",
+      "precio": "21",
+      "date": "2024-07-27"
     }
-    ],
-    "admin": [
-        {
-            "admin_r": "1",
-            "user": "KevinP",
-            "passw": "lqneqmbss"
-        },
-        {
-            "admin_r": "0",
-            "user": "Admin",
-            "passw": "admin123"
-        },
-        {
-            "admin_r": "0",
-            "user": "a",
-            "passw": "a"
-        },
-        {
-            "admin_r": "1",
-            "user": "carlos",
-            "passw": "123"
-        }
-    ]
+  ],
+  "admin": [
+    {
+      "admin_r": "1",
+      "user": "KevinP",
+      "passw": "lqneqmbss",
+      "id": "a31e"
+    },
+    {
+      "admin_r": "0",
+      "user": "Admin",
+      "passw": "admin123",
+      "id": "1bbb"
+    },
+    {
+      "admin_r": "0",
+      "user": "a",
+      "passw": "a",
+      "id": "9cfa"
+    },
+    {
+      "admin_r": "1",
+      "user": "carlos",
+      "passw": "123",
+      "id": "7968"
+    }
+  ]
 }
