@@ -78,6 +78,13 @@
       "stock": "21",
       "precio": "21",
       "date": "2024-07-27"
+    },
+    {
+      "id": "568",
+      "nombre": "Carlos",
+      "stock": "1",
+      "precio": "0",
+      "info_add": "2024-07-09"
     }
   ],
   "admin": [

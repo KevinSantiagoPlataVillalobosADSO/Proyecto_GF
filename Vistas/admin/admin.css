@@ -32,10 +32,13 @@ main{
     padding: 3vh;
 }
 
+.container{
+    width: 100%;
+}
 
 .admin__content{
     margin: 5vh;
-    width: 110vh;
+    width: 90%;
     height: 26.5vh;
 }
 
@@ -44,13 +47,18 @@ main{
     width: 100%;
     height: 90%;
     padding: 2vh;
-    display: flex;
+    overflow: auto;
+    display: grid;
+    grid-template-rows: 90%;
+    grid-template-columns: repeat(auto-fill, 20vh);
     align-items: center;
+    gap: 1vh;
 }
 
 .content__title{
+    min-width: 20vh;
     background-color: var(--golde_variant);
-    width: 30vh;
+    width: 30%;
     height: 15%;
     font-size: 3vh;
     padding-left: 3vh;

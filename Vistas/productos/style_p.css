@@ -44,6 +44,7 @@
 
 .cards__cat{
     grid-area: s;
+    min-width: 30vh;
     overflow-y: auto;
     overflow-x: hidden;
     display: grid;
