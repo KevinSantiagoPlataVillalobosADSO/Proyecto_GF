@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/estilos/admin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <div class="menu-hamburguesa" id="menuToggle">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="Productos.html">Productos</a></li>
+            <li><a href="venta.html">Venta</a></li>
+        </ul>
+        <!-- <i class='bx bx-menu'></i> -->
+    </header>
+    <aside class="content_aside">
+        <img class="img_icon" src="../../IMG/Icono granfruver.png" alt="">
+        <section class="content_nav">
+            <figure>
+                <a class="button__aside--inicio" href="../index.html">
+                    <div>Inicio</div>
+                </a>
+            </figure>
+            <figure>
+                <a class="button__aside--admin" href="Productos.html">
+                    <div>Productos</div>
+                </a>
+            </figure>
+            <figure>
+                <a class="button__aside--venta" href="venta.html">
+                    <div>Ventas </div>
+                </a>
+            </figure>
+        </section>
+    </aside>
+    <main>
+        <section class="container">
+            <div class="admin__content --productos">
+                <div class="content__title">ACCIONES</div>
+                <div class="content__options">
+                    <a class="option" href="productoscrud.html">
+                        <i class='bx bxs-food-menu'></i>
+                        <p>productos</p>
+                    </a>
+                    <a class="option" href="#delete">
+                        <i class='bx bxs-truck bx-flip-horizontal'></i>
+                        <p>proveedores</p>
+                    </a>
+                    <a class="option" href="#update">
+                        <i class='bx bxs-box'></i>
+                        <p>inventario</p>
+                    </a>
+                    <a class="option" href="#update">
+                        <i class='bx bx-store' ></i>
+                        <p>venta y factura</p>
+                    </a>
+                </div>
+            
+        </section>
+    </main>
+    <script type="module" src="/scripts/app_admin.js"></script>
+</body>
+</html>

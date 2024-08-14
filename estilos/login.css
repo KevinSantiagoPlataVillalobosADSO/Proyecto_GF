@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Oswald:wght@200..700&display=swap');
-@import url(../../../componentes.css);
+@import url(componentes.css);
 
 *{
     font-family: "Oswald", sans-serif;
@@ -129,3 +129,20 @@ p:hover{
     font-size: 3vh;
 }
 
+@media (max-width:768px) {
+    .design-container{
+        display: none;
+    }
+
+    .login-container{
+        border: 1vh solid var(--gren_sales) ;
+        border-radius: 5vh;
+        width: 50vh;
+        height: 90vh;
+    }
+
+    form > input{
+        width: 90%;
+        height: 10vh;
+    }
+}

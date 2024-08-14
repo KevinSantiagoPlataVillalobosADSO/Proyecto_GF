@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilos/p_crud.css">
+</head>
+<body>
+    <button class="back"><a href="../vista/admin.html">Volver</a></button>
+    <main class="content">
+        <div class="content__contenedor">
+            <figure class="contenedor__card">
+                <button class="card__mostrar">Agregar productos</button>
+                <form novalidate hidden class="add__form">
+                    <h2>AGREGAR</h2>
+                    <input type="text" placeholder="ID" class="form__id" required>
+                    <input type="text" placeholder="Nombre" class="form__name" required>
+                    <input type="number" placeholder="Stock" class="form__stock" required>
+                    <input type="date" class="form__venc"  required>
+                    <select name="" aria-valuetext="" class="form__cat" required>
+                        <option>Seleccionar</option>
+                    </select>
+                    <select name="" aria-valuetext="" class="form__proveedor" required>
+                        <option>Seleccionar</option>
+                    </select>
+                    <input type="number" placeholder="Precio" class="form__price" required>
+                    <input type="submit" class="form__submit"></input>
+                </form>
+            </figure>
+        </div>
+        <div class="contenedor__lista">
+            <h2>LISTA</h2>
+            <div class="content_table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Stock</th>
+                            <th>Precio</th>
+                            <th>Categoria</th>
+                            <th>Proveedor</th>
+                            <th>vencimiento</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                    
+                </table>
+            </div>
+        </div>
+        <form id="editForm" class="edit__form" novalidate hidden>
+            <button type="button" class="close__btn">X</button>
+            <h2>EDITAR PRODUCTO</h2>
+            <input type="text" placeholder="ID" class="edit__id" required>
+            <input type="text" placeholder="Nombre" class="edit__name" required>
+            <input type="number" placeholder="Stock" class="edit__stock" required>
+            <input type="date" class="edit__venc" required>
+            <select name="" aria-valuetext="" class="edit__cat" required>
+                <option>Seleccionar</option>
+            </select>
+            <select name="" aria-valuetext="" class="edit__proveedor" required>
+                <option>Seleccionar</option>
+            </select>
+            <input type="number" placeholder="Precio" class="edit__price" required>
+            <input type="submit" class="edit__submit" value="Guardar Cambios">
+        </form>
+    </main>
+    <script type="module" src="../scripts/p_crud.js"></script>
+</body>
+</html>

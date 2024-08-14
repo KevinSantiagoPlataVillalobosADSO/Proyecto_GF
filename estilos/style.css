@@ -69,3 +69,18 @@ figure > a > img{
 figure:hover{
     scale: 1.1;
 }
+
+
+
+@media (max-width:620px) {
+
+    body{
+        height: 140vh;
+    }
+
+    .container_menu{
+        margin-top: 5vh;
+        height: 100%;
+        flex-direction: column;
+    }
+}

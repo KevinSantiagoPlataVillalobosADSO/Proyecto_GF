@@ -18,7 +18,7 @@ const enter = (event)=>{
             icon.classList.add("bx-lock-open-alt")
             found = true;
             setTimeout(() => {
-                window.location.href = "../admin.html"
+                window.location.href = "admin.html"
             }, 1000);
         }
         })

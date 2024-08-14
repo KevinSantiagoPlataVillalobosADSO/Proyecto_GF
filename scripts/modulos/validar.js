@@ -1,7 +1,5 @@
-
-let inpus_r = document.querySelectorAll(".form__prod > input[required]")
-
-export function val(){
+export function val(validar){
+    let inpus_r = document.querySelectorAll(validar)
     let pasar = true
     console.log(inpus_r)
     inpus_r.forEach((x) => {
@@ -9,7 +7,5 @@ export function val(){
             pasar = false
         }
     })
-    if(pasar == true){
-        return true
-    }
+    return pasar
 }

@@ -5,27 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
     <link rel="icon" href="/IMG/favicon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="style_p.css">
+    <link rel="stylesheet" href="/estilos/style_p.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
     <header class="header">
-        <i class='bx bx-menu'></i>
+        <div class="menu-hamburguesa" id="menuToggle">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="Login.html">Admin</a></li>
+            <li><a href="venta.html">Venta</a></li>
+        </ul>
+        <!-- <i class='bx bx-menu'></i> -->
     </header>
     <aside class="content_aside">
         <img class="img_icon" src="../../IMG/Icono granfruver.png" alt="">
         <section class="content_nav">
             <figure>
-                <a class="button__aside--inicio" href="../../index.html">
+                <a class="button__aside--inicio" href="../index.html">
                     <div>Inicio</div>
                 </a>
             </figure>
             <figure>
-                <a class="button__aside--admin" href="../admin/Login/Login.html">
+                <a class="button__aside--admin" href="Login.html">
                     <div>Admin</div>
                 </a>
             </figure>
             <figure>
-                <a class="button__aside--venta" href="">
+                <a class="button__aside--venta" href="venta.html">
                     <div>Ventas </div>
                 </a>
             </figure>
@@ -54,6 +66,6 @@
             </div>
         </section>
     </main>
-    <script src="app_p2.js"></script>      
+    <script src="/scripts/app_p2.js"></script>      
 </body>
 </html>
