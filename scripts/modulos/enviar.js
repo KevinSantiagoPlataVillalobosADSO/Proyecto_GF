@@ -6,6 +6,7 @@ export const enviar = ((datos)=>{
     })
     .then(response => response.json()) 
     .then(json => {
+        alert("Añadido con existo");
         let user = leer().then((u) => {
             listar(u);
         })

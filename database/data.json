@@ -2,13 +2,13 @@
   "productos": [
     {
       "id": "33333",
-      "nombre": "Mango",
+      "nombre": "Manguito",
       "stock": "120",
       "Categoria": "Seleccionar",
       "proveedor": "frutas maria",
       "info_add": "2024-08-22",
       "precio": "12000",
-      "src": "../IMG/productos/mango.jpeg"
+      "src": "../IMG/productos/producto-sin-imagen.png"
     },
     {
       "id": "7777",
@@ -100,7 +100,6 @@
       "precio": "1200",
       "src": "../IMG/productos/pera.jpg"
     }
-    
   ],
   "admin": [
     {

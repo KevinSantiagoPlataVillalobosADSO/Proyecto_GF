@@ -6,6 +6,7 @@ export const update = ((id, datos)=>{
     })
     .then(response => response.json()) 
     .then(json => {
+        alert("Actualizado correctamente");
         let user = leer().then((u) => {
             listar(u);
         })
