@@ -8,7 +8,7 @@
       "proveedor": "frutas maria",
       "info_add": "2024-08-22",
       "precio": "12000",
-      "src": "../IMG/productos/producto-sin-imagen.png"
+      "src": "../IMG/productos/mango.jpeg"
     },
     {
       "id": "7777",
@@ -18,8 +18,89 @@
       "proveedor": "frutas maria",
       "info_add": "2024-08-22",
       "precio": "1200",
-      "src": "../IMG/productos/producto-sin-imagen.png"
+      "src": "../IMG/productos/manzanas.webp"
+    },
+    {
+      "id": "2133",
+      "nombre": "Cereza",
+      "stock": "123",
+      "Categoria": "Frutas",
+      "proveedor": "frutas maria",
+      "info_add": "2024-08-22",
+      "precio": "1200",
+      "src": "../IMG/productos/cereza.jpg"
+    },
+    {
+      "id": "4124",
+      "nombre": "lulo",
+      "stock": "123",
+      "Categoria": "Frutas",
+      "proveedor": "frutas maria",
+      "info_add": "2024-08-22",
+      "precio": "1200",
+      "src": "../IMG/productos/lulo.jpg "
+    },
+    {
+      "id": "5345",
+      "nombre": "naranja",
+      "stock": "123",
+      "Categoria": "Frutas",
+      "proveedor": "frutas maria",
+      "info_add": "2024-08-22",
+      "precio": "1200",
+      "src": "../IMG/productos/naranja.jpg"
+    },
+    {
+      "id": "4125",
+      "nombre": "papaya",
+      "stock": "123",
+      "Categoria": "Frutas",
+      "proveedor": "frutas maria",
+      "info_add": "2024-08-22",
+      "precio": "1200",
+      "src": "../IMG/productos/papaya.jpg"
+    },
+    {
+      "id": "1634",
+      "nombre": "sandia",
+      "stock": "123",
+      "Categoria": "Frutas",
+      "proveedor": "frutas maria",
+      "info_add": "2024-08-22",
+      "precio": "1200",
+      "src": "../IMG/productos/sandia.jpg"
+    },
+    {
+      "id": "0923",
+      "nombre": "piña",
+      "stock": "123",
+      "Categoria": "Frutas",
+      "proveedor": "frutas maria",
+      "info_add": "2024-08-22",
+      "precio": "1200",
+      "src": "../IMG/productos/piña.jpg"
+    },
+    {
+      "id": "4163",
+      "nombre": "uvas",
+      "stock": "123",
+      "Categoria": "Frutas",
+      "proveedor": "frutas maria",
+      "info_add": "2024-08-22",
+      "precio": "1200",
+      "src": "../IMG/productos/uvas.png"
+    },
+    {
+      "id": "6235",
+      "nombre": "pera",
+      "stock": "123",
+      "Categoria": "Frutas",
+      "proveedor": "frutas maria",
+      "info_add": "2024-08-22",
+      "precio": "1200",
+      "src": "../IMG/productos/pera.jpg"
     }
+    
   ],
   "admin": [
     {

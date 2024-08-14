@@ -62,7 +62,7 @@
 
 .card__cat{
     position: relative;
-    width: 95%;
+    width: 90%;
     height: 90%;
     margin: var(--margin);
     border-radius: 3vh;
