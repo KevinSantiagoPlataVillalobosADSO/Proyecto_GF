@@ -77,6 +77,7 @@ edit_close.addEventListener("click", (event) => {
     edit.classList.remove("vista__edit")
     let overlay = document.querySelector('.overlay');
     document.body.removeChild(overlay);
+    stockb.value = ""
 })
 
 form_b.addEventListener("submit", async (event) => {
@@ -84,21 +85,26 @@ form_b.addEventListener("submit", async (event) => {
 
     let validar = ".edit__form > [required]";
     
-    if(val(validar) && val_inv(stockb.value)){
-
-        const new_st = parseInt(st_t) + parseInt(stockb.value);
-        const new_bd = parseInt(stock_b.value) - parseInt(stockb.value);
-        update_inv(new_st, id_b.value)
-        update_bod(new_bd, id_b.value)
-
-        let user = await leer_b(); 
-        listar_B(user);
+    if(val(validar)){
+        if(val_inv(stockb.value)){
+            const new_st = parseInt(st_t) + parseInt(stockb.value);
+            const new_bd = parseInt(stock_b.value) - parseInt(stockb.value);
+            update_inv(new_st, id_b.value)
+            update_bod(new_bd, id_b.value)
+    
+            let user = await leer_b(); 
+            listar_B(user);   
+        }
+        else{
+            alert("stock insuficiente")
+        }
     }
     else{
-        alert("EL stock es mayor a las existencias o no se digito");
+        alert("Rellene los campos");
     }
     let user = await leer_b(); 
         listar_B(user);
+    stockb.value = ""
 });
 
 sessionStorage.removeItem('adminVisited');
