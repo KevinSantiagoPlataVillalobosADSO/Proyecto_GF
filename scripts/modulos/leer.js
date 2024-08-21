@@ -34,3 +34,9 @@ export async function leer_emp(){
     let datos = await response.json();
     return datos;
 }
+
+export async function leer_fact(){
+    let response  = await fetch('http://localhost:3000/venta');
+    let datos = await response.json();
+    return datos;
+}

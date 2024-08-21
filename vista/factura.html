@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    <link rel="stylesheet" href="../estilos/fact.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <button class="back">
+            <a href="../vista/admin.html" class="bx bxs-chevron-left" id="back"></a>
+        </button>
+        <h1>Factura</h1>
+    </header>
+    <main>
+        <section class="container">
+            <div>
+                <div>
+                    <h1>Factura id: 123</h1>
+                    <h2>Fecha: 10/10/2010</h2>
+                </div>
+                <div class="tabla__container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>producto</th>
+                                <th>cantidad</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>123</td>
+                                <td>manzana</td>
+                                <td>1lb</td>
+                                <td>1200</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h1>TOTAL: 1200</h1>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="../scripts/fact.js"></script>
+</body>
+</html>

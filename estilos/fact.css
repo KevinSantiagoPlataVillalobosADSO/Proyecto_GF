@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(componentes.css);
+
+*{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+:root{
+    --whiter: white;
+    --gray-peace: rgb(236, 236, 236); 
+    --sotf-night: rgb(44, 44, 62);
+    --gray-night: rgb(26, 26, 46);
+    --gray-low: rgb(195, 195, 195);
+    --gren_sales: #06B802;
+    --golden_admin: #FEB70A;
+    --apple: #FF4D30;
+    --home_blue: rgb(96, 154, 255);
+    --sales: rgb(61, 10, 133);
+    --padding: 10px;
+    --margin: 16px;
+}
+
+body{
+    background-color: rgb(243, 243, 243);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    padding: 3vh;
+    background-color: var(--sales);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+header > h1{
+    position: absolute;
+    left: 50%;
+    color: var(--whiter);
+    transform: translate(-50%, -0%);
+    font-size: 5vh;
+}
+
+.back{
+    background-color: var(--sales);
+}
+
+main{
+    /* background-color: #06B802; */
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    gap: 4vh;
+}
+
+.container > div{
+    width: 40vh;
+    height: 50vh;
+    padding: 4vh;
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--gray-peace);
+    border: 0.5vh solid rgba(136, 81, 212, 0.222);
+}
+
+.tabla__container{
+    overflow-y: auto;
+    height: 20vh;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f3f3f3;
+    border-radius: 2vh;
+}
+
+thead {
+    background-color: var(--sales);
+    color: #ffffff;
+    height: 5vh;
+    padding: 5vh;
+}
+
+thead :first-child {
+    border-top-left-radius: 2vh;
+}
+
+thead :last-child{
+    border-top-right-radius: 2vh;
+}
+
+thead th {
+    font-size: 1.5vh;
+    padding: 1.5vh;
+    text-align: center;
+}
+
+
+tbody td {  
+    text-align: center;
+    font-size: 1.5vh;
+    padding: 1.5vh;
+}
+
+tbody tr:hover{  
+    background-color: rgb(238, 238, 238)
+}

@@ -10,6 +10,8 @@ import { existe_P, existe_prov } from "./modulos/existe__prod.js";
 import { update } from "./modulos/update.js";
 import { form_d } from "./modulos/delete.js";
 import { rellenar_prov } from "./modulos/rellenar_prov.js";
+import { traer_stockbd } from "./modulos/traer_stock.js";
+import { update_bod } from "./modulos/update_inv.js";
 
 const add_close = document.querySelector(".add__form > .close__btn")
 const p_submit = document.querySelector('.pedido__submit')
@@ -175,7 +177,7 @@ form_p.addEventListener('submit', async (event) => {
     }
 });
 
-tabla_p.addEventListener("click", (event) => {
+tabla_p.addEventListener("click", async(event) => {
     const ruta = "Pedido"
     if(event.target.classList.contains("bx-check")){
         const row = event.target.closest("tr")
@@ -189,8 +191,14 @@ tabla_p.addEventListener("click", (event) => {
                 "estado": "Recibido",
                 "cantidad": `${cnt}`
             }
-            console.log(datos);
+
+            const st_b = await traer_stockbd(ip)
+            console.log(st_b);
             
+            const new_bd = parseInt(st_b) + parseInt(cnt);
+            console.log(new_bd);
+            
+            update_bod(new_bd, ip)
             update(id, datos, ruta)
             alert("Marcado como recibido")
         }

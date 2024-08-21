@@ -64,7 +64,6 @@ tabla.addEventListener("click", async (event) => {
         rellenar_bd(id)
 
         st_t = await traer_stock(id); 
-        console.log(st_t)
 
         const ruta = "productos"
 

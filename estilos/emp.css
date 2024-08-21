@@ -25,7 +25,7 @@
 }
 
 body{
-    background-color: var(--sotf-night);
+    background-color: var(--gray-peace);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -191,7 +191,7 @@ header > h1{
     outline: none;
     border: none;
     color: var(--color-emp);
-    background-color: var(--sotf-night);
+    background-color: var(--gray-peace);
     border-bottom: 0.3vh solid var(--color-emp);
     margin-bottom: 2vh;
 }

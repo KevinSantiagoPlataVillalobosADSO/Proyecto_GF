@@ -25,6 +25,11 @@
     --margin: 16px;
 }
 
+#ttl{
+    width: 60vh;
+    font-size: 6vh;
+}
+
 .button__aside--inicio > div:hover{
     background-color: var(--home_blue);
     color: var(--whiter);
@@ -242,3 +247,35 @@ tbody tr:hover{
     scale: 1.1;
     cursor: pointer;
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Desplaza la fila hacia arriba */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* La fila vuelve a su posición original */
+    }
+}
+
+/* Estilo para la nueva fila */
+.new-row {
+    animation: fadeIn 0.5s ease-in-out; /* Aplica la animación con duración de 0.5s */
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0); /* Posición original */
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px); /* Desplaza la fila hacia arriba */
+    }
+}
+
+/* Estilo para la fila que se va a eliminar */
+.remove-row {
+    animation: fadeOut 0.5s ease-in-out forwards; /* Aplica la animación con duración de 0.5s */
+}   
