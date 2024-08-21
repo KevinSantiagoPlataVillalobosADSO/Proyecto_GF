@@ -64,10 +64,29 @@
                     <h1 class="total__precio" id="ttl">Precio TOTAL: 0$</h1>
                 </div>
                 <div class="venta__pagar">
-                    <button class="pagar__boton">PAGAR</button>
+                    <button class="pagar__metod">PAGAR</button>
                 </div>
             </figure>
         </section>
+        <div class="metodo__pago" hidden>
+            <button type="button" class="close__btn">X</button>
+            <h1>Datos de compra</h1>
+            <div class="recibido">
+                <h1 class="total__preciom" id="ttlm">Precio TOTAL: 0$</h1>
+                <input type="number" placeholder="Recibido" class="recibido__in">
+            </div>
+            <h1 class="cambio_m">Cambio:</h1>
+            <div class="metod">
+                <label for="mp">Metodo de pago:</label>
+                <select id="mp" class="metodo__pagar">
+                    <option>Efectivo</option>
+                    <option>Targeta credito/debito</option>
+                    <option>Transferencia</option>
+                    <option>Otro</option>
+                </select>
+            </div>
+            <button class="pagar__boton">PAGAR</button>
+        </div>
     </main>
     <script type="module" src="../scripts/venta.js"></script>
 </body>

@@ -3,6 +3,7 @@ import { traer_stock } from "./traer_stock.js";
 import { update_inv } from "./update_inv.js";
 
 const tabla = document.querySelector('.lista__add > tbody');
+const metod = document.querySelector('.metodo__pagar');
 const filas = tabla.getElementsByTagName('tr');
 const datos_A = [];
 const ahora = new Date();
@@ -30,7 +31,7 @@ export const detal = async()=>{
                 id: celdas[0].innerText,
                 nombre: celdas[1].innerText,
                 cant: celdas[2].innerText,
-                precio: celdas[3].innerText
+                precio: celdas[3].innerText,
             };
             datos_A.push(obj);
             
@@ -38,6 +39,7 @@ export const detal = async()=>{
         const datos = {
             fecha_v: ahora.toLocaleDateString(),
             detal: datos_A,
+            metodo: metod.value,
             total: total
         }
         enviar(datos, ruta)

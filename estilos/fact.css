@@ -129,3 +129,7 @@ tbody td {
 tbody tr:hover{  
     background-color: rgb(238, 238, 238)
 }
+
+.metodo{
+    font-size: 2vh;
+}

@@ -57,10 +57,15 @@ const listar_fact = (u) =>{
             });
             const ttl = document.createElement('h1')
             ttl.textContent = `Total: ${x.total}`
+
+            const metodo = document.createElement('h1')
+            metodo.classList.add("metodo")
+            metodo.textContent = `Metodo: ${x.metodo}`
             
             tabla.appendChild(tbo)
             con_t.appendChild(tabla)
             card.appendChild(con_t)
+            card.appendChild(metodo)
             card.appendChild(ttl)
 
 

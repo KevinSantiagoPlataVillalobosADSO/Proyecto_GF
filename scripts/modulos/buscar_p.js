@@ -3,6 +3,11 @@ import { detal } from "./det_venta.js";
 
 const tabla = document.querySelector(".lista__add > tbody");
 const $total = document.querySelector('#ttl')
+const $totalm = document.querySelector('#ttlm')
+const recibidom = document.querySelector(".recibido__in")
+const cambio_t = document.querySelector(".cambio_m")
+
+let total = 0; // inicializa la variable
 
 export const buscar = async(x, cant, c) =>{
     const prod = await leer()
@@ -71,7 +76,6 @@ export const buscar = async(x, cant, c) =>{
                     tabla.removeChild(fila); 
                 })
             }
-            let total = 0; // inicializa la variable
 
             for (let i = 0; i < tabla.rows.length; i++) {
                 let pr = tabla.rows[i].cells[3].innerText.trim(); 
@@ -83,9 +87,11 @@ export const buscar = async(x, cant, c) =>{
                     if (!isNaN(ttl)) { // verifica que el valor sea un numeor
                         total += ttl; // vuma el valor al total
                         $total.textContent = `Precio TOTAL: ${total}$`
+                        $totalm.textContent = `TOTAL: ${total}$` 
                     }
                 }
-            }            
+            } 
+                    
         }
         
     }
@@ -93,3 +99,12 @@ export const buscar = async(x, cant, c) =>{
         alert("No existe el producto")
     }
 }
+
+recibidom.addEventListener('keyup', ()=>{
+    calc(recibidom.value)
+})
+
+const calc = (vuelto)=>{
+    const cambio = vuelto - total
+    cambio_t.textContent = `Cambio: ${cambio}`
+}   
