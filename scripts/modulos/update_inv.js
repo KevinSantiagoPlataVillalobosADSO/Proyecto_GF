@@ -9,7 +9,7 @@ export const update_inv = (inv, id)=>{
         },
     })
     .then((response) => response.json())
-    .then((json) => console.log(json), alert(("stock añadido")));
+    .then((json) => console.log(json));
     
     
 }
@@ -25,5 +25,5 @@ export const update_bod = (inv, id)=>{
         },
     })
     .then((response) => response.json())
-    .then((json) => console.log(json));
+    .then((json) => console.log(json), alert(("stock añadido")));
 }

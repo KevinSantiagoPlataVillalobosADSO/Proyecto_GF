@@ -17,14 +17,15 @@ export const detal = async()=>{
     }
     else{
         for (let i = 0; i < filas.length; i++) {
-            let pr = tabla.rows[i].cells[3].innerText.trim(); 
+            const celdas = filas[i].getElementsByTagName('td');
+            up_inv(celdas);
+            let pr = tabla.rows[i].cells[3].innerText.trim();
             if (pr !== '') { 
                 let ttl = parseFloat(pr); 
                 if (!isNaN(ttl)) { // Verifica que el valor sea un número
                     total += ttl; // Suma el valor al total
                 }
             }
-            const celdas = filas[i].getElementsByTagName('td');
             const obj = {
                 id: celdas[0].innerText,
                 nombre: celdas[1].innerText,
@@ -32,17 +33,7 @@ export const detal = async()=>{
                 precio: celdas[3].innerText
             };
             datos_A.push(obj);
-            const st_b = await traer_stock(celdas[0].innerText)
-            let celdaCantidad = celdas[2];
-            // Extrae el numero de gramos eliminando "Gr"
-            let cantidadActual = parseFloat(celdaCantidad.textContent.replace("Lb", "").trim());
-            // Suma la cantidad nueva a la existente
-            let nuevaCantidad =  st_b - cantidadActual*500;
-            console.log(nuevaCantidad);
             
-            const new_bd = nuevaCantidad;
-            
-            update_inv(new_bd, celdas[0].innerText)
         }
         const datos = {
             fecha_v: ahora.toLocaleDateString(),
@@ -51,5 +42,15 @@ export const detal = async()=>{
         }
         enviar(datos, ruta)
     }
+}
 
+const up_inv = async(celdas)=>{
+    const st_b = await traer_stock(celdas[0].innerText)
+    let celdaCantidad = celdas[2];
+    // Extrae el numero de gramos eliminando "Gr"
+    let cantidadActual = parseFloat(celdaCantidad.textContent.replace("Lb", "").trim());
+    // Suma la cantidad nueva a la existente
+    let nuevaCantidad =  st_b - cantidadActual*500; 
+    const new_bd = nuevaCantidad;
+    update_inv(new_bd, celdas[0].innerText) 
 }
