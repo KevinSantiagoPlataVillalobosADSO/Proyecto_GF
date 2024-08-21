@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROVEEDORES</title>
+    <link rel="stylesheet" href="../estilos/prov_crud.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <button class="back">
+            <a href="../vista/admin.html" class="bx bxs-chevron-left" id="back"></a>
+        </button>
+        <h1>PROVEEDORES</h1>
+    </header>
+    <main>
+        <section class="seccion__pedido">
+            <div class="pedido__detalle">
+                <div class="pedido__title">
+                    <h1>Pedido</h1>
+                </div>
+                <form class="pedido__form" novalidate>
+                    <input type="text" placeholder="ID del producto" class="id__prod" required>
+                    <input type="number" placeholder="Cantidad de producto" class="cant__prod" required>
+                    <input class="pedido__submit" type="submit">
+                </form>
+            </div>
+            <div class="pedido__content">
+                <table class="pedido__tabla">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>ID_productos</th>
+                            <th>Cantidad</th>
+                            <th>estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>  
+                </table>
+            </div>
+        </section>
+        <section class="seccion__tabla">
+            <button class="Proveedor__add">Agregar Proveedor</button>
+            <table class="tabla__proveedores">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Telefono</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>  
+            </table>
+        </section>
+        <form novalidate hidden class="add__form">
+            <button type="button" class="close__btn">X</button>
+            <h2>AGREGAR</h2>
+            <input type="text" placeholder="ID" class="form__id" required>
+            <input type="text" placeholder="Nombre" class="form__name" required>
+            <input type="number" placeholder="Telefono" class="form__telefono" required>
+            <input type="submit" class="add__submit">
+        </form>
+        <form novalidate hidden class="edit__form">
+            <button type="button" class="close__edit">X</button>
+            <h2>ACTUALIZAR</h2>
+            <input type="text" placeholder="ID" class="edit__id" required readonly>
+            <input type="text" placeholder="Nombre" class="edit__name" required>
+            <input type="number" placeholder="Telefono" class="edit__telefono" required>
+            <input type="submit" class="edit__submit">
+        </form>
+    </main>
+    <script type="module" src="../scripts/prov_crud.js"></script>
+</body>
+</html>

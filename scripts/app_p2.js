@@ -1,4 +1,14 @@
-(async () => {
+import { filtro } from "./modulos/filtros.js";
+const dom = document;
+const frutas = document.querySelector('.fruta');
+const verdura = document.querySelector('.verdura');
+const enlatado = document.querySelector('.enlatado');
+const grano = document.querySelector('.grano');
+const varios = document.querySelector('.varios');
+const $cards = dom.querySelector(".cards");
+const card = dom.querySelectorAll('.card')
+
+const mostrar = async()=> {
     try {
         let response = await fetch("http://localhost:3000/productos");
         if (!response.ok) {
@@ -7,10 +17,11 @@
 
         let datos = await response.json();
         console.log(datos);
-
-        let dom = document;
-        let $cards = dom.querySelector(".cards");
         let fragment = dom.createDocumentFragment();
+
+        card.forEach((x) => {
+            $cards.removeChild(x)
+        })
 
         datos.forEach((x) => {
             let card = dom.createElement("div");
@@ -60,9 +71,34 @@
     } catch (error) {
         console.error("Error fetching or processing data:", error);
     }
-})();
+}
+mostrar();
 
 document.getElementById("menuToggle").addEventListener("click", function() {
     this.classList.toggle("toggle");
     document.getElementById("navLinks").classList.toggle("show");
 });
+
+frutas.addEventListener('click', async(event)=>{
+    const cat = "Frutas"
+    await filtro(cat)
+})
+
+verdura.addEventListener('click', async(event)=>{
+    const cat = "Verduras"
+    await filtro(cat)
+})
+
+grano.addEventListener('click', async(event)=>{
+    const cat = "Granos"
+    await filtro(cat)
+})
+
+enlatado.addEventListener('click', async(event)=>{
+    const cat = "Enlatados"
+    await filtro(cat)
+})
+
+varios.addEventListener('click', async(event)=>{
+    mostrar();
+})

@@ -1,4 +1,4 @@
-const listar = (u) =>{
+const listar_emp = (u) =>{
         let tbody = document.querySelector("tbody")
 
         let fragment_l = document.createDocumentFragment();
@@ -18,20 +18,17 @@ const listar = (u) =>{
             let columna_n = document.createElement('td')
             columna_n.innerText = x.nombre
 
-            let columna_s = document.createElement('td')
-            columna_s.innerText = x.stock
+            let columna_d = document.createElement('td')
+            columna_d.innerText = x.documento
 
-            let columna_p = document.createElement('td')
-            columna_p.innerText = x.precio
+            let columna_tel = document.createElement('td')
+            columna_tel.innerText = x.telefono
 
-            let columna_c = document.createElement('td')
-            columna_c.innerText = x.Categoria
+            let columna_sal = document.createElement('td')
+            columna_sal.innerText = x.salario
 
-            let columna_prov = document.createElement('td')
-            columna_prov.innerText = x.proveedor
-            
-            let columna_venc = document.createElement('td')
-            columna_venc.innerText = x.info_add
+            let columna_lugar = document.createElement('td')
+            columna_lugar.innerText = x.lugar_t
 
             let columna_edit = document.createElement('td')
             let btn_edit = document.createElement('button')
@@ -50,12 +47,11 @@ const listar = (u) =>{
             columna_edit.append(btn_del)
 
             fila.appendChild(columna_ID)
+            fila.appendChild(columna_d)
             fila.appendChild(columna_n)
-            fila.appendChild(columna_s)
-            fila.appendChild(columna_p)
-            fila.appendChild(columna_c)
-            fila.appendChild(columna_prov)
-            fila.appendChild(columna_venc)
+            fila.appendChild(columna_tel)
+            fila.appendChild(columna_sal)
+            fila.appendChild(columna_lugar)
             fila.appendChild(columna_edit)
 
 
@@ -65,4 +61,4 @@ const listar = (u) =>{
         tbody.appendChild(fragment_l)
 }
 
-export default listar
+export default listar_emp

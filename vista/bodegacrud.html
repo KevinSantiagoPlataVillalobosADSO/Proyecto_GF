@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTOS</title>
+    <link rel="stylesheet" href="../estilos/B_crud.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <button class="back">
+            <a href="../vista/admin.html" class="bx bxs-chevron-left" id="back"></a>
+        </button>
+        <h1>BODEGA</h1>
+    </header>
+    <main class="content">
+        <div class="contenedor__lista">
+            <button class="card__mostrar"><a href="productoscrud.html">Agregar Producto</a></button>
+            <div class="content_table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Stock</th>
+                            <th>Precio</th>
+                            <th>Categoria</th>
+                            <th>Proveedor</th>
+                            <th>vencimiento</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                    
+                </table>
+            </div>
+        </div>
+        <form id="editForm" class="edit__form" novalidate hidden>
+            <button type="button" class="close__btn">X</button>
+            <h2>Reabastecer Tienda</h2>
+            <input type="text" placeholder="ID" class="edit__id" required readonly>
+            <input type="text" placeholder="Nombre" class="edit__name" required hidden>
+            <input type="number" placeholder="Stock" class="edit__stock" required readonly>
+            <input type="number" placeholder="Stockb" class="edit__stockb" required >
+            <input type="date" class="edit__venc" required hidden>
+            <select name="" aria-valuetext="" class="edit__cat sel" required hidden>
+                <option>Seleccionar</option>
+            </select>
+            <select name="" aria-valuetext="" class="edit__proveedor sel" required hidden>
+                <option>Seleccionar</option>
+            </select>
+            <input type="number" placeholder="Precio" class="edit__price" required hidden>
+            <input type="submit" class="edit__submit" value="Guardar Cambios">
+        </form>
+    </main>
+    <script type="module" src="../scripts/B_crud.js"></script>
+</body>
+</html>

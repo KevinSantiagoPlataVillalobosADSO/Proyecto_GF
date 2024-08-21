@@ -1,5 +1,5 @@
-const listar = (u) =>{
-        let tbody = document.querySelector("tbody")
+const listar_prov = (u) =>{
+        let tbody = document.querySelector(".tabla__proveedores > tbody")
 
         let fragment_l = document.createDocumentFragment();
         let fila = document.querySelectorAll(".fila")
@@ -16,22 +16,10 @@ const listar = (u) =>{
             columna_ID.classList.add("id")
 
             let columna_n = document.createElement('td')
-            columna_n.innerText = x.nombre
+            columna_n.innerText = x.nom
 
             let columna_s = document.createElement('td')
-            columna_s.innerText = x.stock
-
-            let columna_p = document.createElement('td')
-            columna_p.innerText = x.precio
-
-            let columna_c = document.createElement('td')
-            columna_c.innerText = x.Categoria
-
-            let columna_prov = document.createElement('td')
-            columna_prov.innerText = x.proveedor
-            
-            let columna_venc = document.createElement('td')
-            columna_venc.innerText = x.info_add
+            columna_s.innerText = x.tel
 
             let columna_edit = document.createElement('td')
             let btn_edit = document.createElement('button')
@@ -52,10 +40,6 @@ const listar = (u) =>{
             fila.appendChild(columna_ID)
             fila.appendChild(columna_n)
             fila.appendChild(columna_s)
-            fila.appendChild(columna_p)
-            fila.appendChild(columna_c)
-            fila.appendChild(columna_prov)
-            fila.appendChild(columna_venc)
             fila.appendChild(columna_edit)
 
 
@@ -65,4 +49,4 @@ const listar = (u) =>{
         tbody.appendChild(fragment_l)
 }
 
-export default listar
+export default listar_prov

@@ -15,6 +15,7 @@ const fecha = document.querySelector(".edit__venc")
 const s_cat = document.querySelector(".edit__cat")
 const s_prov = document.querySelector(".edit__proveedor")
 const price = document.querySelector(".edit__price")
+const stockb = document.querySelector(".edit__stockb")
 let id__act = 0;
 
 addEventListener("DOMContentLoaded", (event) => {
@@ -79,6 +80,18 @@ stock.addEventListener('blur', (event) => {
     num(event, stock);
 })
 
+stockb.addEventListener('keypress', (event) => {
+    num(event, stockb);
+})
+
+stockb.addEventListener('keyup', (event) => {
+    num(event, stockb);
+})
+
+stockb.addEventListener('blur', (event) => {
+    num(event, stockb);
+})
+
 nombre.addEventListener('keypress', (event) => {
     letras(event, nombre);
 })
@@ -108,8 +121,8 @@ s_prov.addEventListener("blur", (event) => {
 })
 
 
-export const rellenar = async(i)=>{
-    let response = await fetch(`http://localhost:3000/productos/${i}`)
+export const rellenar_bd = async(i)=>{
+    let response = await fetch(`http://localhost:3000/Bodega/${i}`)
     let data = await response.json();
     id__act = data.id;
     id.value = data.id
@@ -121,33 +134,4 @@ export const rellenar = async(i)=>{
     price.value = data.precio
 }
 
-form.addEventListener("submit", (event) => {
-    const ruta = "productos"
-    let validar = ".edit__form > [required]"
-    if(val(validar)){
-        console.log(val())
-        const datos = {
-            "id": id.value,
-            "nombre": nombre.value,
-            "stock": stock.value,
-            "Categoria": s_cat.value,
-            "proveedor": s_prov.value,
-            "info_add": fecha.value,
-            "precio": price.value,
-            "src": "../IMG/productos/producto-sin-imagen.png"
-        }
-        event.preventDefault();
-        update(id__act, datos, ruta)
-        let user = leer().then((u) => {
-            listar(u);
-        }) 
-    }
-    else{
-        event.preventDefault();
-        alert("NO es posible agregar, por favor digite todos los campos");
-        
-    }
-    let user = leer().then((u) => {
-        listar(u);
-    })
-})
+

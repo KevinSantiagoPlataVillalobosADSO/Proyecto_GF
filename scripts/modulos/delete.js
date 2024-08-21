@@ -1,10 +1,8 @@
-export const form_d = (event, id)=>{
-    fetch(`http://localhost:3000/productos/${id}`, {
+export const form_d = (event, ruta, id)=>{
+    fetch(`http://localhost:3000/${ruta}/${id}`, {
         method: 'DELETE',
     }).then((d) => {
-        let user = leer().then((u) => {
-            listar(u);
-        })
+        console.log(d);
     })
     
 }

@@ -1,5 +1,32 @@
 /* Botones -------------------------------- */
 
+/* 
+BOTON ATRAS
+*/
+
+.back{
+    border-radius: 2vh;
+    background-color: var(--gren_sales);
+    outline: none;
+    border: none;
+    width: 5vh;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+}
+
+.back > a{
+    text-decoration: none;
+    color: var(--whiter);
+}
+.back:hover{
+    transform: translateX(-20%);
+    transition: transform 0.5s ease-out;
+    cursor: pointer;
+}
+
 /*
 ESTILO DE BARRA SUCESS Y NO_SEND
 */
@@ -17,25 +44,39 @@ form > [required].no_send{
 */
 
 .btn_edit{
+    border: none;
     margin: 0.2vh;
-    border: 0.2vh solid rgb(71, 138, 255);
-    width: 8vh;
+    width: 4vh;
     height: 4vh;
     border-radius: 2vh;
     color: rgb(71, 138, 255);
-    font-size: 1.5vh;
+    font-size: 3vh;
+}
+
+.btn_check{
+    border: none;
+    margin: 0.2vh;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 2vh;
+    color: #169705;
+    font-size: 3vh;
 }
 
 .btn_del{
     margin: 0.2vh;
-    border: 0.2vh solid rgb(255, 71, 71);
-    width: 8vh;
+    border: none;
+    width: 4vh;
     height: 4vh;
     border-radius: 2vh;
     color: rgb(255, 71, 71);
-    font-size: 1.5vh;
+    font-size: 3vh;
 }
 
+button > i{
+    width: 100%;
+    height: 100%;
+}
 
 .btn_edit:hover{
     scale: 1.2;
@@ -45,6 +86,26 @@ form > [required].no_send{
 .btn_del:hover{
     scale: 1.2;
     cursor: pointer;
+}
+
+.btn_check:hover{
+    scale: 1.2;
+    cursor: pointer;
+}
+
+
+.btn__disable{
+    margin: 0.2vh;
+    border: none;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 2vh;
+    color: rgb(99, 99, 99);
+    font-size: 3vh;
+}
+
+.btn__disable:hover{
+    scale: 1.0;
 }
 
 /* ADMIN  */
@@ -153,60 +214,6 @@ transition: opacity 400ms ease-in;
     border-radius: 0 1vh 0 0;
 
 }
-.--update{
-    position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0,0,0,0.8);
-	z-index: 10;
-	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
-}
 
-.--update:target {
-	opacity:1;
-	pointer-events: auto;
-}
-.--update > div {
-    border-radius: 2ch;
-	width: 80vh;
-    height: 60vh;
-	position: relative;
-	margin: 10% auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-	padding: 3vh;
-	background: #fff;
--webkit-transition: opacity 400ms ease-in;
--moz-transition: opacity 400ms ease-in;
-transition: opacity 400ms ease-in;
-}
-
-.--update > div > div > table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 18px;
-    text-align: left;
-    border: 1px solid #ddd;
-}
-
-.--update > div > div > table > thead tr{
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-}
-
-.--update > div > div > table > th, td{
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-}
 
 .close:hover { background: #ff1e00; }

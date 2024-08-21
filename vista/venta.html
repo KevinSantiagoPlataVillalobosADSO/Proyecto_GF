@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../estilos/venta.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
     <aside class="content_aside">
@@ -32,22 +34,22 @@
             <figure class="venta__busqueda">
                 <div class="busqueda__content">
                     <input type="text" class="barra__busqueda">
-                    <button class="barra__limpiar">borrar</button>     
+                    <button class="barra__limpiar">Limpiar</button>     
                 </div>
                 <div class="busqueda__add">
-                    <label for="add__cant">Cantidad</label>
-                    <input type="number" id="add__cant" class="add__cant">
+                    <label for="add__cant">Cantidad - Gr</label>
+                    <input type="number" id="add__cant" class="add__cant" min="0" >
                     <button class="add__button">Añadir</button>
                 </div>
             </figure>
             <figure class="venta__lista">
-                <table>
+                <table class="lista__add">
                     <thead>
                         <tr>
                             <th>id</th>
                             <th>nombre</th>
-                            <th>precio</th>
                             <th>cant</th>
+                            <th>precio</th>
                             <th>accion</th>
                         </tr>
                     </thead>
@@ -67,5 +69,6 @@
             </figure>
         </section>
     </main>
+    <script type="module" src="../scripts/venta.js"></script>
 </body>
 </html>

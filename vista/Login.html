@@ -8,7 +8,9 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <a class="btn_cmp" href="javascript:history.go(-1);">Volver</a>
+    <button class="back">
+        <a href="javascript:history.go(-1);" class="bx bxs-chevron-left" id="back"></a>
+    </button>
     <!-- <button class="btn_cmp">Volver</button> -->
     <div class="design-container">
         <i class='bx bx-lock-alt'></i>
@@ -16,13 +18,13 @@
     <div class="login-container">
         <img src="../IMG/Icono granfruver.png" alt="">
         <h2>Iniciar Sesión</h2>
-        <form>
+        <form novalidate>
             <input type="text" placeholder="Usuario" class="user" required>
             <input type="password" placeholder="Contraseña" class="pass" required>
             <input type="submit" value="Ingresar" class="btn__submit">
             <p>¿Olvidaste tu contraseña?</p>
         </form>
     </div>
-    <script src="../scripts/log.js"></script>
+    <script type="module" src="../scripts/log.js"></script>
 </body>
 </html>

@@ -31,9 +31,22 @@ body{
     align-items: center;
 }
 
+.back{
+    border-radius: 2vh;
+    background-color: var(--apple);
+    outline: none;
+    border: none;
+    width: 5vh;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+}
+
 header{
     padding: 3vh;
-    background-color: var(--gren_sales);
+    background-color: var(--apple);
     width: 100%;
     height: 10vh;
     display: flex;
@@ -75,7 +88,7 @@ header > h1{
 .add__form > h2{
     font-size: 3vh;
     margin-bottom: 2vh;
-    color: var(--gren_sales);
+    color: var(--apple);
 }
 
 .add__form > [required]{
@@ -95,7 +108,7 @@ header > h1{
     outline: none;
     border: none;
     background-color: var(--whiter);
-    box-shadow: 0px 0px 5px 3px rgba(107, 211, 93, 0.173);
+    box-shadow: 0px 0px 5px 3px rgba(211, 97, 93, 0.173);
     width: 20vh;
     height: 5vh;
     border-radius: 2vh;
@@ -105,7 +118,7 @@ header > h1{
 
 .form__submit:hover{
     scale: 1.1;
-    color: var(--gren_sales);
+    color: var(--apple);
     box-shadow: 0px 0px 5px 3px rgba(121, 211, 93, 0.173);
     font-size: 2.2vh;
 }
@@ -115,14 +128,19 @@ header > h1{
     font-size: 2vh;
     outline: none;
     border: none;
-    color: var(--gren_sales);
-    border-bottom: 0.3vh solid var(--gren_sales);
+    color: var(--apple);
+    border-bottom: 0.3vh solid var(--apple);
     margin-bottom: 2vh;
 }
 
 .card__mostrar:hover{
     cursor: pointer;
     scale: 1.1;
+}
+
+a{
+    text-decoration: none;
+    color: var(--apple);
 }
 
 .contenedor__lista{
@@ -145,7 +163,7 @@ table {
 }
 
 thead {
-    background-color: var(--gren_sales);
+    background-color: var(--apple);
     color: #ffffff;
     height: 5vh;
     padding: 5vh;
@@ -170,6 +188,7 @@ tr > td:last-child{
 }
 
 tbody td {  
+    text-align: center;
     font-size: 1.5vh;
     padding: 1.5vh;
 }
@@ -191,7 +210,7 @@ tbody tr:hover{
 
 .vista__edit{
     width: 40vh;
-    height: 60vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -260,17 +279,6 @@ tbody tr:hover{
 
 /* Estilos para el fondo oscuro */
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-    display: none;
-}
-
-.overlay2 {
     position: fixed;
     top: 0;
     left: 0;

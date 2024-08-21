@@ -2,42 +2,42 @@
   "productos": [
     {
       "id": "33333",
-      "nombre": "Manguito",
+      "nombre": "Mango",
       "stock": "120",
       "Categoria": "Seleccionar",
       "proveedor": "frutas maria",
       "info_add": "2024-08-22",
-      "precio": "12000",
+      "precio": "1200",
       "src": "../IMG/productos/producto-sin-imagen.png"
     },
     {
       "id": "7777",
       "nombre": "Manzana",
-      "stock": "123",
+      "stock": "50",
       "Categoria": "Frutas",
       "proveedor": "frutas maria",
       "info_add": "2024-08-22",
-      "precio": "1200",
+      "precio": "2400",
       "src": "../IMG/productos/manzanas.webp"
     },
     {
       "id": "2133",
       "nombre": "Cereza",
-      "stock": "123",
+      "stock": "240",
       "Categoria": "Frutas",
       "proveedor": "frutas maria",
       "info_add": "2024-08-22",
-      "precio": "1200",
+      "precio": "2200",
       "src": "../IMG/productos/cereza.jpg"
     },
     {
       "id": "4124",
       "nombre": "lulo",
-      "stock": "123",
+      "stock": "65",
       "Categoria": "Frutas",
       "proveedor": "frutas maria",
       "info_add": "2024-08-22",
-      "precio": "1200",
+      "precio": "1355",
       "src": "../IMG/productos/lulo.jpg "
     },
     {
@@ -53,21 +53,21 @@
     {
       "id": "4125",
       "nombre": "papaya",
-      "stock": "123",
+      "stock": "34",
       "Categoria": "Frutas",
       "proveedor": "frutas maria",
       "info_add": "2024-08-22",
-      "precio": "1200",
+      "precio": "5000",
       "src": "../IMG/productos/papaya.jpg"
     },
     {
       "id": "1634",
       "nombre": "sandia",
-      "stock": "123",
+      "stock": "20",
       "Categoria": "Frutas",
       "proveedor": "frutas maria",
       "info_add": "2024-08-22",
-      "precio": "1200",
+      "precio": "6400",
       "src": "../IMG/productos/sandia.jpg"
     },
     {

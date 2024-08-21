@@ -1,5 +1,5 @@
-export const update = ((id, datos)=>{
-    fetch(`http://localhost:3000/productos/${id}`, {
+export const update = ((id, datos, ruta)=>{
+    fetch(`http://localhost:3000/${ruta}/${id}`, {
         method: "PUT",
         body: JSON.stringify(datos),
         headers: {"Content-type": "application/json; charset=UTF-8"}
@@ -7,9 +7,6 @@ export const update = ((id, datos)=>{
     .then(response => response.json()) 
     .then(json => {
         alert("Actualizado correctamente");
-        let user = leer().then((u) => {
-            listar(u);
-        })
     });
     let inputs = document.querySelectorAll("input")
     inputs.forEach(x => {

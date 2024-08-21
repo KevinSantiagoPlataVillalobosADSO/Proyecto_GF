@@ -63,7 +63,6 @@ i{
     margin-bottom: 2vh;
 }
 
-
 .login-container > form{
     height: 50vh;
     display: flex;
@@ -117,7 +116,7 @@ p:hover{
     cursor: pointer;
 }
 
-.btn_cmp{
+.back{
     position: absolute;
     top: 1vh;
     left: 1vh;

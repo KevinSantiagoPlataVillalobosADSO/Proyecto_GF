@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTOS</title>
+    <link rel="stylesheet" href="../estilos/emp.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <button class="back">
+            <a href="../vista/admin.html" class="bx bxs-chevron-left" id="back"></a>
+        </button>
+        <h1>EMPLEADOS</h1>
+    </header>
+    <main class="content">
+        <div class="contenedor__lista">
+            <button class="card__mostrar">Agregar empleados</button>
+            <div class="emp_table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Documento</th>
+                            <th>Nombre</th>
+                            <th>Telefono</th>
+                            <th>Salario</th>
+                            <th>Lugar de trabajo</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>  
+                    </tbody>    
+                </table>
+            </div>
+        </div>
+        <form novalidate hidden class="add__form">
+            <button type="button" class="close__btn">X</button>
+            <h2>AGREGAR EMPLEADO</h2>
+            <input type="text" placeholder="ID" class="form__id" required>
+            <input type="text" placeholder="Nombre" class="form__name" required>
+            <input type="number" placeholder="documento" class="form__documento" required>
+            <input type="number" placeholder="Telefono" class="form__telefono" required>
+            <input type="number" placeholder="Salario" class="form__sal"  required>
+            <select name="" aria-valuetext="" class="form__lugar sel" required>
+                <option>Seleccionar</option>
+                <option>Bodega</option>
+                <option>Tienda</option>
+            </select>
+            <input type="submit" class="form__submit"></input>
+        </form>
+        <form novalidate hidden class="edit">
+            <button type="button" class="close__btn">X</button>
+            <h2>ACTUALIZAR EMPLEADO</h2>
+            <input type="text" placeholder="ID" class="forme__id" required readonly>
+            <input type="text" placeholder="Nombre" class="forme__name" required>
+            <input type="number" placeholder="documento" class="forme__documento" required>
+            <input type="number" placeholder="Telefono" class="forme__telefono" required>
+            <input type="number" placeholder="Salario" class="forme__sal"  required>
+            <select name="" aria-valuetext="" class="forme__lugar sel" required>
+                <option>Seleccionar</option>
+                <option>Bodega</option>
+                <option>Tienda</option>
+            </select>
+            <input type="submit" class="forme__submit"></input>
+        </form>
+    </main>
+    <script type="module" src="../scripts/emp_crud.js"></script>
+</body>
+</html>

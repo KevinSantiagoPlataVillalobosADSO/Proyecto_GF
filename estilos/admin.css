@@ -25,6 +25,22 @@
     --margin: 16px;
 }
 
+.button__aside--inicio > div:hover{
+    background-color: var(--home_blue);
+    color: var(--whiter);
+    font-weight: bolder;
+}
+.button__aside--admin > div:hover{
+    background-color: var(--apple);
+    color: var(--whiter);
+    font-weight: bolder;
+}
+.button__aside--venta > div:hover{
+    background-color: var(--gren_sales);
+    color: var(--whiter);
+    font-weight: bolder;
+}
+
 main{
     height: 100%;
     justify-content: start;
@@ -58,7 +74,7 @@ main{
     min-width: 20vh;
     background-color: var(--golde_variant);
     width: 30%;
-    height: 15%;
+    height: 1vh;
     font-size: 3vh;
     padding-left: 3vh;
     padding-bottom: 5vh;
@@ -105,6 +121,25 @@ form > input:focus{
 
 header{
     display: none;
+}
+
+.container__off{
+    width: 15vh;
+    height: 5vh;
+    border: none;
+    outline: none;
+    border-bottom: 0.5vh solid red; 
+    background-color: #ffff;
+}
+
+.container__off:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.container__off > a{
+    color: red;
+    font-size: 2vh;
 }
 
 @media (max-width: 768px){
@@ -188,7 +223,7 @@ header{
 
     .content__options{
         width: 100%;
-        grid-template-rows: repeat(auto-fill, 30vh);
+        grid-template-rows: repeat(auto-fill, 20%);
         grid-template-columns: repeat(auto-fill, 90%);
     }
 
