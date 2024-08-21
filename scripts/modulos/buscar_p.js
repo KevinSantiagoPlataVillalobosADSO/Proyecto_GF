@@ -25,6 +25,7 @@ export const buscar = async(x, cant, c) =>{
                 prc_ttl += tabla.rows[i].cells[4]
                 let primeraCelda = tabla.rows[i].cells[0].innerHTML;                
                 if (primeraCelda === producto.id) {
+                    
                     encontrado = true;
                     // Obtiene la celda que contiene la cantidad actual
                     let celdaCantidad = tabla.rows[i].cells[2];

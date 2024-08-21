@@ -12,6 +12,7 @@ const tbody = document.querySelector('tbody')
 const metodo = document.querySelector('.metodo__pago')
 const add_close = document.querySelector(".close__btn")
 const recibidom = document.querySelector(".recibido__in")
+const tabla = document.querySelector('.lista__add > tbody');
 
 cant_b.addEventListener('click', (event) => {
     if(cant.value <= 0){
@@ -40,11 +41,16 @@ pagar.addEventListener('click', (event)=>{
 })
 
 pagar_m.addEventListener('click', (event)=>{
-    let overlay = document.createElement('div');
-    overlay.className = 'overlay';
-    document.body.appendChild(overlay);
-    overlay.style.display = 'block';
-    metodo.classList.add("vista__edit")
+    if(tabla.rows.length === 0){
+        alert("no se puede añadir una venta vacia")
+    }
+    else{
+        let overlay = document.createElement('div');
+        overlay.className = 'overlay';
+        document.body.appendChild(overlay);
+        overlay.style.display = 'block';
+        metodo.classList.add("vista__edit")
+    }
 })
 
 add_close.addEventListener("click", (event) => {
