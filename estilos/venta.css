@@ -270,6 +270,11 @@ tbody tr:hover{
     z-index: 1000;
 }
 
+.pagar__metod:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
 .vista__edit{
     width: 100vh;
     height: 60vh;
